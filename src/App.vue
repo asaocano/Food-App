@@ -8,9 +8,7 @@
           <router-link to="/favorites"
             ><i class="bx bxs-heart"></i
           ></router-link>
-          <router-link to="/historial"
-            ><i class="bx bx-history"></i
-          ></router-link>
+          <router-link to="/history"><i class="bx bx-history"></i></router-link>
         </div>
       </div>
     </div>

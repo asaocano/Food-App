@@ -4,7 +4,7 @@
     <div class="favorites">
       <div class="favorite" v-for="(item, index) in favorites" :key="index">
         <div class="img">
-          <img src="@/assets/mc2.jpg" alt="" />
+          <img :src="'/assets/' + item.img" alt="" />
         </div>
         <div class="info">
           <h3 class="title">{{ item.nombre }}</h3>
@@ -22,9 +22,9 @@ export default {
   data() {
     return {
       favorites: [
-        { nombre: "McDonald's", ordenes: "5", calif: "4.2" },
-        { nombre: "Caffenio", ordenes: "4", calif: "4.8" },
-        { nombre: "KFC", ordenes: "2", calif: "4.4" },
+        { nombre: "McDonald's", ordenes: "5", calif: "4.2", img: "mc.jpg" },
+        { nombre: "Caffenio", ordenes: "4", calif: "4.8", img: "caffenio.png" },
+        { nombre: "KFC", ordenes: "2", calif: "4.4", img: "kfc.jpeg" },
       ],
     };
   },
@@ -41,7 +41,6 @@ h2 {
   justify-content: space-between;
   margin: 20px;
   padding: 15px;
-  border-top: 1px solid #000;
   border-bottom: 1px solid #000;
   .img img {
     height: 80px;

@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Chest from "../views/Cesta.vue";
 import Favorites from "../views/Favorites.vue";
+import History from "../views/Historial.vue";
 Vue.use(VueRouter);
 
 const routes = [
@@ -20,6 +21,11 @@ const routes = [
     path: "/favorites",
     name: "Favorites",
     component: Favorites,
+  },
+  {
+    path: "/history",
+    name: "History",
+    component: History,
   },
 ];
 

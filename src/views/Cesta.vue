@@ -12,7 +12,7 @@
       <div class="items" v-for="(item, index) in cart" :key="index">
         <div class="item">
           <div class="item-info">
-            <img src="@/assets/burguer.jpg" />
+            <img :src="'/assets/' + item.img" />
             <div class="details">
               <p class="name">{{ item.name }}</p>
               <p class="price">${{ item.price }}</p>
